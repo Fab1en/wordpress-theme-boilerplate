@@ -1,0 +1,18 @@
+/*
+ * Theme Name: Wordpress Boilerplate
+ * Author: Your name here
+ * Author URI: Your URL here
+ * Description: Wordpress Theme Boilerplate : state-of-the-art starting theme files. Includes HTML5 Boilerplate, SMACSS, History.js, Modernizr.js and Wordpress best practices.
+ * Version: 0.1
+ * Text Domain: boilerplate_domain_to_change
+ */
+ 
+/*
+ * This theme follows SMACSS guideline http://smacss.com/book/categorizing
+ * All CSS rules are located into the following files :
+ *  # css/base.css : the defaults
+ *  # css/layout.css : major components
+ *  # css/module.css : discrete components
+ *  # css/state.css : augments and overrides all other styles
+ *  # css/theme.css : specific look and feel
+ */
