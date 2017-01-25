@@ -47,7 +47,7 @@ function boilerplate_domain_to_change_print_assets(){
         wp_register_script('jquery', 'http://code.jquery.com/jquery-1.8.3.js');
     }
     
-    if( (defined('CSS_DEBUG') && !CSS_DEBUG) ) {
+    if( (defined('CSS_DEBUG') && !CSS_DEBUG && file_exists(dirname(__FILE__).'/build/cssbuild.php')) ) {
         // stylesheets (minified version)
         require(dirname(__FILE__).'/build/cssbuild.php');
         wp_enqueue_style('cssbuild', get_stylesheet_directory_uri().'/css/'.CSSBUILD.'.css', array(), null);
@@ -63,7 +63,7 @@ function boilerplate_domain_to_change_print_assets(){
     wp_enqueue_script('modernizr', get_template_directory_uri().'/js/libs/modernizr-2.6.2.min.js', array(), '2.6.2', false);
     wp_enqueue_script('history', get_template_directory_uri().'/js/libs/history.min.js', array(), '3.2.0', true);
 
-    if(defined('SCRIPT_DEBUG') && !SCRIPT_DEBUG){
+    if(defined('SCRIPT_DEBUG') && !SCRIPT_DEBUG && file_exists(dirname(__FILE__).'/build/jsbuild.php')){
         // scripts (minified version)
         require(dirname(__FILE__).'/build/jsbuild.php');
         wp_enqueue_script('main', get_stylesheet_directory_uri().'/js/'.JSBUILD.'.min.js', array('jquery', 'history'), null, true);
