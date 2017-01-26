@@ -1,5 +1,3 @@
-        <footer id="footer">
-        
-            
-            
-        </footer> <!-- #footer -->
+		<footer id="footer">
+
+		</footer> <!-- #footer -->
